@@ -11,9 +11,9 @@ router.get('/', getAll);
 router.get('/:id', getById);
 router.post('/', createSchema, create);
 router.put('/:id', updateSchema, update);
-router._delete('/:id', _delete);
+router.delete('/:id', _delete);
 
-modules.exports = router;
+module.exports = router;
 
 //route function
 
